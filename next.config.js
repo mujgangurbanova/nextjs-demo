@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
-// next.config.js
-// next.config.js
 
+const path = require('path');
 module.exports = {
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx']
-  // ...other configurations
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
 }
 
   
